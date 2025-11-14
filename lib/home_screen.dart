@@ -16,15 +16,16 @@ class HomeScreen extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Container(
-                  color: Color.fromRGBO(49, 49, 49, 1),
+                  color: const Color.fromRGBO(49, 49, 49, 1),
                   child: Padding(
-                    padding: EdgeInsets.only(top: 50, left: 16, right: 16),
+                    padding:
+                        const EdgeInsets.only(top: 50, left: 16, right: 16),
                     child: Column(
                       children: [
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Column(
+                            const Column(
                               children: [
                                 Text(
                                   textAlign: TextAlign.start,
@@ -42,47 +43,48 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Image.asset("assets/profile.png"),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Container(
                           width: 315,
                           height: 52,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(152, 152, 152, 0.5),
+                            color: const Color.fromRGBO(152, 152, 152, 0.5),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.only(left: 16, right: 4),
+                            padding: const EdgeInsets.only(left: 16, right: 4),
                             child: Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.search,
                                   size: 20,
                                   color: Colors.white,
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Search Coffee",
                                   style: TextStyle(
                                     color: Color.fromRGBO(152, 152, 152, 1),
                                   ),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   width: 44,
                                   height: 44,
                                   decoration: BoxDecoration(
-                                    color: Color.fromRGBO(198, 124, 78, 1),
+                                    color:
+                                        const Color.fromRGBO(198, 124, 78, 1),
                                     borderRadius: BorderRadius.circular(12),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.sort,
                                     color: Colors.white,
                                     size: 20,
@@ -112,7 +114,7 @@ class HomeScreen extends StatelessWidget {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.only(
+                                  padding: const EdgeInsets.only(
                                     top: 110,
                                     left: 16,
                                   ),
@@ -120,10 +122,11 @@ class HomeScreen extends StatelessWidget {
                                     width: 121,
                                     height: 38,
                                     decoration: BoxDecoration(
-                                      color: Color.fromRGBO(198, 124, 78, 1),
+                                      color:
+                                          const Color.fromRGBO(198, 124, 78, 1),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                       "Cappuccino",
                                       style: TextStyle(
@@ -135,16 +138,17 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(
+                                  padding: const EdgeInsets.only(
                                       top: 110, left: 16, right: 16),
                                   child: Container(
                                     width: 121,
                                     height: 38,
                                     decoration: BoxDecoration(
-                                      color: Color.fromRGBO(243, 243, 243, 1),
+                                      color: const Color.fromRGBO(
+                                          243, 243, 243, 1),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                       "Machiato",
                                       style: TextStyle(
@@ -156,15 +160,17 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(top: 110, right: 16),
+                                  padding: const EdgeInsets.only(
+                                      top: 110, right: 16),
                                   child: Container(
                                     width: 121,
                                     height: 38,
                                     decoration: BoxDecoration(
-                                      color: Color.fromRGBO(243, 243, 243, 1),
+                                      color: const Color.fromRGBO(
+                                          243, 243, 243, 1),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                         child: Text(
                                       "Latte",
                                       style: TextStyle(
@@ -178,11 +184,11 @@ class HomeScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            padding: const EdgeInsets.symmetric(horizontal: 24),
                             child: Row(
                               children: [
                                 InkWell(
@@ -191,7 +197,7 @@ class HomeScreen extends StatelessWidget {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                DetailsScreen()));
+                                                const DetailsScreen()));
                                   },
                                   child: Container(
                                     width: 155,
@@ -211,7 +217,7 @@ class HomeScreen extends StatelessWidget {
                                               height: 132,
                                               fit: BoxFit.cover,
                                             ),
-                                            Padding(
+                                            const Padding(
                                               padding: EdgeInsets.only(
                                                   top: 10, left: 10),
                                               child: Row(
@@ -237,14 +243,14 @@ class HomeScreen extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        Text(
+                                        const Text(
                                           "Cappucino",
                                           style: TextStyle(
                                               color: Colors.black,
                                               fontSize: 16,
                                               fontWeight: FontWeight.w600),
                                         ),
-                                        Text(
+                                        const Text(
                                           "with Chocolate",
                                           style: TextStyle(
                                             color: Color.fromRGBO(
@@ -254,7 +260,7 @@ class HomeScreen extends StatelessWidget {
                                         ),
                                         Row(
                                           children: [
-                                            Text(
+                                            const Text(
                                               "4.53\$",
                                               style: TextStyle(
                                                 color: Colors.black,
@@ -262,19 +268,19 @@ class HomeScreen extends StatelessWidget {
                                                 fontSize: 18,
                                               ),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 40,
                                             ),
                                             Container(
                                               width: 32,
                                               height: 32,
                                               decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
+                                                color: const Color.fromRGBO(
                                                     198, 124, 78, 1),
                                                 borderRadius:
                                                     BorderRadius.circular(10),
                                               ),
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.add,
                                                 size: 16,
                                                 color: Colors.white,
@@ -304,7 +310,7 @@ class HomeScreen extends StatelessWidget {
                                             height: 132,
                                             fit: BoxFit.cover,
                                           ),
-                                          Padding(
+                                          const Padding(
                                             padding: EdgeInsets.only(
                                                 top: 10, left: 10),
                                             child: Row(
@@ -330,14 +336,14 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Text(
+                                      const Text(
                                         "Cappucino",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w600),
                                       ),
-                                      Text(
+                                      const Text(
                                         "with Chocolate",
                                         style: TextStyle(
                                           color:
@@ -347,7 +353,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       Row(
                                         children: [
-                                          Text(
+                                          const Text(
                                             "4.53\$",
                                             style: TextStyle(
                                               color: Colors.black,
@@ -355,19 +361,19 @@ class HomeScreen extends StatelessWidget {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 40,
                                           ),
                                           Container(
                                             width: 32,
                                             height: 32,
                                             decoration: BoxDecoration(
-                                              color: Color.fromRGBO(
+                                              color: const Color.fromRGBO(
                                                   198, 124, 78, 1),
                                               borderRadius:
                                                   BorderRadius.circular(10),
                                             ),
-                                            child: Icon(
+                                            child: const Icon(
                                               Icons.add,
                                               size: 16,
                                               color: Colors.white,
@@ -382,7 +388,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            padding: const EdgeInsets.symmetric(horizontal: 24),
                             child: Row(
                               children: [
                                 Container(
@@ -403,7 +409,7 @@ class HomeScreen extends StatelessWidget {
                                             height: 132,
                                             fit: BoxFit.cover,
                                           ),
-                                          Padding(
+                                          const Padding(
                                             padding: EdgeInsets.only(
                                                 top: 10, left: 10),
                                             child: Row(
@@ -429,14 +435,14 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Text(
+                                      const Text(
                                         "Cappucino",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w600),
                                       ),
-                                      Text(
+                                      const Text(
                                         "with Chocolate",
                                         style: TextStyle(
                                           color:
@@ -446,7 +452,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       Row(
                                         children: [
-                                          Text(
+                                          const Text(
                                             "4.53\$",
                                             style: TextStyle(
                                               color: Colors.black,
@@ -454,19 +460,19 @@ class HomeScreen extends StatelessWidget {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 40,
                                           ),
                                           Container(
                                             width: 32,
                                             height: 32,
                                             decoration: BoxDecoration(
-                                              color: Color.fromRGBO(
+                                              color: const Color.fromRGBO(
                                                   198, 124, 78, 1),
                                               borderRadius:
                                                   BorderRadius.circular(10),
                                             ),
-                                            child: Icon(
+                                            child: const Icon(
                                               Icons.add,
                                               size: 16,
                                               color: Colors.white,
@@ -495,7 +501,7 @@ class HomeScreen extends StatelessWidget {
                                             height: 132,
                                             fit: BoxFit.cover,
                                           ),
-                                          Padding(
+                                          const Padding(
                                             padding: EdgeInsets.only(
                                                 top: 10, left: 10),
                                             child: Row(
@@ -521,14 +527,14 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Text(
+                                      const Text(
                                         "Cappucino",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 16,
                                             fontWeight: FontWeight.w600),
                                       ),
-                                      Text(
+                                      const Text(
                                         "with Chocolate",
                                         style: TextStyle(
                                           color:
@@ -538,7 +544,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       Row(
                                         children: [
-                                          Text(
+                                          const Text(
                                             "4.53\$",
                                             style: TextStyle(
                                               color: Colors.black,
@@ -546,19 +552,19 @@ class HomeScreen extends StatelessWidget {
                                               fontSize: 18,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 40,
                                           ),
                                           Container(
                                             width: 32,
                                             height: 32,
                                             decoration: BoxDecoration(
-                                              color: Color.fromRGBO(
+                                              color: const Color.fromRGBO(
                                                   198, 124, 78, 1),
                                               borderRadius:
                                                   BorderRadius.circular(10),
                                             ),
-                                            child: Icon(
+                                            child: const Icon(
                                               Icons.add,
                                               size: 16,
                                               color: Colors.white,
@@ -579,7 +585,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: EdgeInsets.only(top: 210, left: 30, right: 30),
+            padding: const EdgeInsets.only(top: 210, left: 30, right: 30),
             child: Image.asset("assets/advertise.png"),
           ),
         ],

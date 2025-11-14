@@ -9,11 +9,11 @@ class DetailsScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -21,31 +21,31 @@ class DetailsScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back_ios,
                     size: 24,
                     color: Colors.black,
                   ),
                 ),
-                Text(
+                const Text(
                   "Details",
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                Icon(Icons.favorite_border)
+                const Icon(Icons.favorite_border)
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Center(child: Image.asset("assets/coffee3.jpg")),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(
               "Cappucino",
@@ -55,7 +55,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(
               "with Chocolate",
@@ -66,15 +66,15 @@ class DetailsScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.star,
                   color: Color.fromRGBO(251, 190, 33, 1),
                   size: 20,
                 ),
-                Text(
+                const Text(
                   "4.8",
                   style: TextStyle(
                     fontSize: 12,
@@ -82,31 +82,31 @@ class DetailsScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Text(
+                const Text(
                   "(230)",
                   style: TextStyle(
                     fontSize: 12,
                     color: Color.fromRGBO(155, 155, 155, 1),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(255, 240, 240, 1),
+                    color: const Color.fromRGBO(255, 240, 240, 1),
                     borderRadius: BorderRadius.circular(14),
                   ),
                   child: Image.asset("assets/bean.png"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Container(
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(255, 240, 240, 1),
+                    color: const Color.fromRGBO(255, 240, 240, 1),
                     borderRadius: BorderRadius.circular(14),
                   ),
                   child: Image.asset("assets/milk.png"),
@@ -115,30 +115,30 @@ class DetailsScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.symmetric(vertical: 16),
             child: Center(
               child: Container(
                 width: 315,
                 height: 1,
-                color: Color.fromRGBO(234, 234, 234, 1),
+                color: const Color.fromRGBO(234, 234, 234, 1),
               ),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               "Description",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: RichText(
               textAlign: TextAlign.start,
-              text: TextSpan(
+              text: const TextSpan(
                 text:
                     'A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo.. ',
                 style: TextStyle(
@@ -158,21 +158,21 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               "Size",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -184,10 +184,10 @@ class DetailsScreen extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(
                       width: 1,
-                      color: Color.fromRGBO(222, 222, 222, 1),
+                      color: const Color.fromRGBO(222, 222, 222, 1),
                     ),
                   ),
-                  child: Center(child: Text("S")),
+                  child: const Center(child: Text("S")),
                 ),
                 Container(
                   width: 96,
@@ -197,10 +197,10 @@ class DetailsScreen extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(
                       width: 1,
-                      color: Color.fromRGBO(222, 222, 222, 1),
+                      color: const Color.fromRGBO(222, 222, 222, 1),
                     ),
                   ),
-                  child: Center(child: Text("M")),
+                  child: const Center(child: Text("M")),
                 ),
                 Container(
                   width: 96,
@@ -210,22 +210,22 @@ class DetailsScreen extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(
                       width: 1,
-                      color: Color.fromRGBO(222, 222, 222, 1),
+                      color: const Color.fromRGBO(222, 222, 222, 1),
                     ),
                   ),
-                  child: Center(child: Text("L")),
+                  child: const Center(child: Text("L")),
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
-                Column(
+                const Column(
                   children: [
                     Text(
                       "Prise",
@@ -244,15 +244,15 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   width: 217,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(198, 124, 78, 1),
+                    color: const Color.fromRGBO(198, 124, 78, 1),
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Buy Now',
                       style: TextStyle(
